@@ -31,13 +31,48 @@
 
                 
                 <a href="../manifesto/458484136448.html" class="kafe-btn kafe-btn-mint-small"><i class="fa fa-user-secret" aria-hidden="true"></i> View Manifesto</a>
-                <a onclick="vote(458484136448,148404653372,560276340920)" class="kafe-btn kafe-btn-danger-small"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> vote</a>
+                <a onclick="vote({{ $candidates->id }},{{ $candidates->post }})" class="kafe-btn kafe-btn-danger-small"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i> vote</a>
                 </div>
               </div>
               </div><!-- /.col-lg-4 -->
                
           </div>
       @endforeach	 	 
+
+      <script type="text/javascript">
+      function increaseValue(id) {
+        // var siblings = $(this).siblings('input.quantity-no');
+        // siblings.val(parseInt(siblings.val(), 10) + 1);
+    
+        var quantity = parseInt(document.getElementById(`quantity-no-${id}`).value, 10);
+        var price = parseInt(document.getElementById(`price${id}`).innerHTML, 10);
+    
+    
+        quantity = isNaN(quantity) ? 0 : quantity;
+        quantity++;
+    
+        document.getElementById(`quantity-no-${id}`).value = quantity;
+        document.getElementById(`total${id}`).innerHTML = price * quantity;
+        updateCart(id, quantity);
+    
+    }
+    
+    const updateCart = (id, quantity) => {
+        const dataToSend = {
+            id,
+            quantity
+        }
+    
+        const notification = {
+            type: 'info',
+            title: 'Successful',
+            text: 'Cart has been updated'
+        }
+    
+        const path = '/updateCart'
+        sendData(path, dataToSend, notification)
+    }
+    </scipt>
 	 
 @stop
 
