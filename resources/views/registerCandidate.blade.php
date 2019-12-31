@@ -97,11 +97,12 @@
               <option>Select Position</option>
               <option value="president">President</option>
               <option value="vpresident">Vice.President</option>
-              <option value="gsec">GenSecreatry</option>
-              <option value="fseec">FinSectary</option>
-              <option value="sodir">SocialDirector</option>
-              <option value="spdir">SportDirector</option>
-              <option value="wellfare">Wellfare</option>
+              <option value="genSec">GenSecreatry</option>
+              <option value="finSec">FinSectary</option>
+              <option value="treasurer">Treasurer</option>
+              <option value="soDirector">SocialDirector</option>
+              <option value="spDirector">SportDirector</option>
+              <option value="wDirector">Wellfare</option>
             </select>
           </div>
 			 </div><!-- /.form-body -->

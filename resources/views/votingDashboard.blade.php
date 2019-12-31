@@ -47,7 +47,7 @@
 			   
 			   <div class="col-lg-4">	
 				<div class="box-home clearfix">
-				 <button name="cat" value="president" text="president" onclick="deleteCart(president)"><input  type="hidden"/></button>
+				 <button name="cat" value="president" text="president" onclick="candidate(president)"><input  type="hidden"/></button>
 				  <img src="source/admin/uploads/15172161218080-png.png" alt="" class="img-resonsive">
 	 <h3>The  President</h3>
 				 <p>Contestants :- 3</p>
@@ -58,7 +58,7 @@
 			   <div class="col-lg-4">	
 				<div class="box-home clearfix">
        
-         <button name="cat" value="vpresident" text="vpresident" onclick="deleteCart(vpresident)"><input  type="hidden"/></button>
+         <button name="cat" value="vpresident" text="vpresident" onclick="candidate(vpresident)"><input  type="hidden"/></button>
 				  <img src="source/admin/uploads/1517253664rd.png" alt="" class="img-resonsive">
           <h3>The Vice-President</h3>
           <p>Contestants :- 3</p></p>
@@ -68,7 +68,8 @@
 			   
 			   <div class="col-lg-4">	
 				<div class="box-home clearfix">
-				 <a href="nominees/gen_sec"></a>
+          <button name="cat" value="genSec" text="genSec" onclick="candidate(genSec)"><input  type="hidden"/></button>
+				
 				  <img src="source/admin/uploads/1517253431.png" alt="" class="img-resonsive">
           <h3>The  General Secretary</h3>
           <p>Contestants :- 3</p>
@@ -78,7 +79,7 @@
 			   
 			   <div class="col-lg-4">	
 				<div class="box-home clearfix">
-				 <a href="nominees/fin_sec"></a>
+          <button name="cat" value="finSec" text="finSec" onclick="candidate(finSec)"><input  type="hidden"/></button>
 				  <img src="source/admin/uploads/1517253449.png" alt="" class="img-resonsive">
           <h3>The  Financial Secretary</h3>
           <p>Contestants :- 3</p>
@@ -88,7 +89,7 @@
 			   
 			   <div class="col-lg-4">	
 				<div class="box-home clearfix">
-				 <a href="nominees/treasurer"></a>
+          <button name="cat" value="treasurer" text="treasurer" onclick="candidate(treasurer)"><input  type="hidden"/></button>
 				  <img src="source/admin/uploads/1517253521.jpg" alt="" class="img-resonsive">
           <h3>The Treasurer</h3>
           <p>Contestants :- 3</p>
@@ -98,7 +99,7 @@
 			   
 			   <div class="col-lg-4">	
 				<div class="box-home clearfix">
-				 <a href="nominees/soc_dir"></a>
+				 <button name="cat" value="soDirector" text="soDirector" onclick="candidate(soDirector)"><input  type="hidden"/></button>
 				  <img src="source/admin/uploads/1517253546ys.jpg" alt="" class="img-resonsive">
           <h3>The  Social Director</h3>
           <p>Contestants :- 3</p>
@@ -108,7 +109,7 @@
 			   
 			   <div class="col-lg-4">	
 				<div class="box-home clearfix">
-				 <a href="nominees/sport_dir"></a>
+				 <button name="cat" value="spDirector" text="spDirector" onclick="candidate(spDirector)"><input  type="hidden"/></button>
 				  <img src="source/admin/uploads/1517253570s.jpg" alt="" class="img-resonsive">
           <h3>The  Sport Director</h3>
           <p>Contestants :- 3</p>
@@ -118,7 +119,7 @@
 			   
 			   <div class="col-lg-4">	
 				<div class="box-home clearfix">
-				 <a href="nominees/welfare_dir"></a>
+				<button name="cat" value="wDirector" text="wDirector" onclick="candidate(wDirector)"><input  type="hidden"/></button>
 				  <img src="source/admin/uploads/1517253591lub.png" alt="" class="img-resonsive">
 				  <h3>The  Welfare Director</h3>
           <p>Contestants :- 3</p>
@@ -139,7 +140,7 @@
 		        </div>	
      </section>
      <script type="text/javascript">
-      const deleteCart = (cat) => {
+      const candidate = (cat) => {
       const dataToSend = {
           cat
       }
